@@ -1,0 +1,62 @@
+body{
+    background-color: #8B611F;
+}
+
+h1, h4{
+    color: white;
+}
+
+.nav-link, .footerText, .postText{
+    color: white;
+    font-family: "Inter", sans-serif
+}
+
+.readAnchor{
+    color: #1D1919;
+    font-size: 18px;
+    font-family: "Inter", sans-serif
+}
+
+.about-btn {
+    color: #EFAE20 !important;
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    line-height: 1.5; 
+    
+    border: 1px solid #EFAE20 !important;
+    border-radius: 20px;
+    
+    padding: 5px 20px;
+    margin-left: 15px;
+    
+    transition: all 0.3s ease-in-out;
+}
+
+.about-btn:hover {
+    background-color: #EFAE20;
+    color: #3e2c0e !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(239, 174, 32, 0.3);
+}
+
+.brand-text {
+    color: #EFAE20 !important;
+    font-family: 'Crimson Text', serif;
+    font-size: 40px;
+    letter-spacing: 0.15em; 
+    transition: all 0.3s ease-in-out; 
+}
+
+.brand-text:hover {
+    color: #FFFFFF !important; 
+    text-shadow: 0 0 20px rgba(239, 174, 32, 0.8);
+    transform: scale(1.02);
+    cursor: pointer;
+}
