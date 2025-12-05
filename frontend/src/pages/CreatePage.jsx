@@ -37,6 +37,13 @@ const CreatePage = () => {
     try {
       let img_source = null;
       if (imageFile) {
+          const imageFormData = new FormData();
+         imageFormData.append("image", imageFile);
+
+         const uploadRes = await api.post("/upload", imageFormData, {
+            headers: { "Content-Type": "multipart/form-data" },
+         });
+         // ------------------------
          img_source = uploadRes.data.filename;
       }
 

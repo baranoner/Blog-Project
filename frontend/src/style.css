@@ -6,9 +6,40 @@ h1, h4{
     color: white;
 }
 
-.nav-link, .footerText, .postText{
+.footerText, .postText{
     color: white;
-    font-family: "Inter", sans-serif
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.navLink {
+    color: white !important;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    
+   
+    margin: 0 20px; 
+    
+   
+    border-bottom: 2px solid transparent; 
+    transition: all 0.3s ease-in-out;
+}
+
+.navLink:hover {
+    color: #EFAE20 !important;
+    border-bottom: 2px solid #EFAE20; 
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 991px) {
+    .navLink {
+        display: block;
+        margin: 10px 0; 
+        text-align: center;
+    }
 }
 
 .readAnchor{
@@ -49,6 +80,7 @@ h1, h4{
 .brand-text {
     color: #EFAE20 !important;
     font-family: 'Crimson Text', serif;
+    text-decoration: none;
     font-size: 40px;
     letter-spacing: 0.15em; 
     transition: all 0.3s ease-in-out; 
