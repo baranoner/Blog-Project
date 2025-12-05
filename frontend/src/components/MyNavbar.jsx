@@ -38,19 +38,27 @@ const MyNavbar = () => {
               <Link className="navLink" to="/Books-Comics">
                 Books / Comics
               </Link>
+              
+              <Link className="about-btn" to="/about">
+                About
+              </Link>
             </Nav>
-
-            <Link className="about-btn ms-auto align-items-center" to="/about">
-              About
-            </Link>
 
             {token && (
               <div className="ms-3">
-                <Button variant="warning" className="d-flex align-items-center p-0">
-                  <Link 
-                    to="/create" 
-                    className="text-dark d-flex align-items-center justify-content-center" 
-                    style={{ textDecoration: 'none', width: '100%', height: '100%', padding: '6px 12px' }}
+                <Button
+                  variant="warning"
+                  className="d-flex align-items-center p-0"
+                >
+                  <Link
+                    to="/create"
+                    className="text-dark d-flex align-items-center justify-content-center"
+                    style={{
+                      textDecoration: "none",
+                      width: "100%",
+                      height: "100%",
+                      padding: "6px 12px",
+                    }}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
