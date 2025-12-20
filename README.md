@@ -5,21 +5,21 @@ A thoughtful, personal blog platform designed for sharing reflections on everyda
 ![Project Preview](https://via.placeholder.com/800x400?text=Meditations+Homepage+Preview)
 *(Replace this link with a screenshot of your actual homepage)*
 
-## ✨ Features
+## Features
 
-### 👤 User / Public Interface
+### User / Public Interface
 *   **Category Filtering:** Seamless navigation between topics like Philosophy, Video Games, Movies/TV, and Everyday Life.
 *   **Responsive Design:** Fully mobile-friendly layout with a custom Navbar and sidebar behavior.
 *   **Visuals:** Image support with custom styling, error handling, and placeholders.
 *   **Aesthetic:** A "Gold & Brown" warm color theme using *Crimson Text* and *Inter* typography.
 
-### 🛡️ Admin / Content Management
+### Admin / Content Management
 *   **Secure Authentication:** JWT-based login system for the site administrator.
 *   **CRUD Operations:** Create, Read, Update, and Delete posts securely.
 *   **Image Uploads:** File handling using **Multer** with instant image previews on the frontend.
 *   **Smart UI:** Admin buttons (Edit/Delete/Create) are hidden from regular users and only appear after login.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Frontend:**
 *   React.js
@@ -35,7 +35,7 @@ A thoughtful, personal blog platform designed for sharing reflections on everyda
 *   JSON Web Token (JWT Auth)
 *   Dotenv
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these instructions to get the project up and running on your local machine.
 
@@ -91,28 +91,9 @@ CREATE TABLE posts (
     npm run dev
     ```
 
-## 📸 Video
+## Video
 
 [![Youtube Video]()](https://www.youtube.com/watch?v=k8af1TWCG0E)
-
-
-
-## 🔐 API Endpoints
-
-| Method | Endpoint | Description | Auth Required |
-| :--- | :--- | :--- | :--- |
-| `GET` | `/posts` | Get all posts | ❌ |
-| `GET` | `/posts/:id` | Get single post | ❌ |
-| `GET` | `/posts/category/:cat` | Filter by category | ❌ |
-| `POST` | `/posts` | Create new post | ✅ (Token) |
-| `POST` | `/posts/login` | Admin Login | ❌ |
-| `PUT` | `/posts/:id` | Update post | ✅ (Token) |
-| `DELETE`| `/posts/:id` | Delete post | ✅ (Token) |
-| `POST` | `/upload` | Upload image | ❌ |
-
-## ✍️ Author
-
-Built as a personal project to explore the PERN stack and responsive web design.
 
 ---
 
